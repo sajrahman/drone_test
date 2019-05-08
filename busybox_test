@@ -1,0 +1,7 @@
+deploy-to-preprod:
+  image: busybox
+  commands:
+    - /bin/echo hello preprod
+  when:
+    environment: preprod
+    event: deployment
